@@ -6,96 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="html, course, css, tags" />
-    <meta name="description" content="Это базовый курс по html" />
-    <title>HTML Course!</title>
+    <meta name="description" content="Это сайт - резюме Печорского Романа" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Roman Resume</title>
 </head>
 
 <body>
+    <div class="container">
 
-    <img src="avatar.jpeg" alt="Печорский Роман" width="200">
 
-    <h1>Печорский Роман</h1>
+        <div class="info">
+            <img src="avatar.jpeg" alt="Печорский Роман" class="avatar">
 
-    <p>Я сборщик мебели с <strong>20 летним стажем</strong></p>
+            <div class="info-text">
+                <h1>Печорский Роман</h1>
 
-    <p>Я люблю <em>играть на гитаре и играть в компьютерные игры</em></p>
+                <p>Я сборщик мебели с <strong>20 летним стажем</strong></p>
 
-    <h4>Список социальных сетей:</h4>
+                <p>Я люблю <em>играть на гитаре и играть в компьютерные игры</em></p>
 
-    <a href="здесь должна быть ссылки на соцсеть" target="_blank">Instagram</a>
-    |
-    <a href="здесь должна быть ссылка на соцсеть" target="_blank">Telegram</a>
-    |
-    <a href="здесь должна быть ссылка на соцсеть" target="_blank">Youtube</a>
+                <h4>Список социальных сетей:</h4>
 
-    <h2>Мои хобби</h2>
-
-    <ol>
-        <li>Сборка конструкторов Лего</li>
-        <li>Игра на гитаре</li>
-        <li>Изучение иностранного языка</li>
-        <li>Знакомство с веб-программированием</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-
-    <table border="1" <thead>
-        <tr>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Школа</td>
-                <td>Учащийся</td>
-                <td>1990-1998</td>
-            </tr>
-            <tr>
-                <td>Лицей</td>
-                <td>Учащийся</td>
-                <td>1998-2001</td>
-            </tr>
-            <tr>
-                <td>Реставрационная мастерская</td>
-                <td>Столяр-краснодеревщик</td>
-                <td>2001-2002</td>
-            </tr>
-            <tr>
-                <td>ДОК №3</td>
-                <td>Столяр-крансодеревщик</td>
-                <td>2002-2002</td>
-            </tr>
-            <tr>
-                <td>ЗАО "Кузьминки-мебель"</td>
-                <td>Сборщик корпусной мебели</td>
-                <td>2002-по н.вр.</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="">
-        <div>
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name" placeholder="Введите имя">
+                <a href="здесь должна быть ссылки на соцсеть" target="_blank">Instagram</a>
+                |
+                <a href="здесь должна быть ссылка на соцсеть" target="_blank">Telegram</a>
+                |
+                <a href="здесь должна быть ссылка на соцсеть" target="_blank">Youtube</a>
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш email</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
+
+            <ol class="list">
+                <li>Сборка конструкторов Лего</li>
+                <li>Игра на гитаре</li>
+                <li>Изучение иностранного языка</li>
+                <li>Знакомство с веб-программированием</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Школа</td>
+                        <td>Учащийся</td>
+                        <td>1990-1998</td>
+                    </tr>
+                    <tr>
+                        <td>Лицей</td>
+                        <td>Учащийся</td>
+                        <td>1998-2001</td>
+                    </tr>
+                    <tr>
+                        <td>Реставрационная мастерская</td>
+                        <td>Столяр-краснодеревщик</td>
+                        <td>2001-2002</td>
+                    </tr>
+                    <tr>
+                        <td>ДОК №3</td>
+                        <td>Столяр-крансодеревщик</td>
+                        <td>2002-2002</td>
+                    </tr>
+                    <tr>
+                        <td>ЗАО "Кузьминки-мебель"</td>
+                        <td>Сборщик корпусной мебели</td>
+                        <td>2002-по н.вр.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+        <div class="card bg-yellow">
+            <h2>Мои курсы</h2>
+
+            <ul class="link-list">
+                <li>
+                    Бытовые самоделки
+                </li>
+                <li>
+                    Советы по сборке мебели
+                </li>
+            </ul>
         </div>
 
-        <input type="submit" value="Отправить!">
-    </form>
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+        
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name"
+                    placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email"
+                    placeholder="Введите имя">
+                </div>
+            </div>
+        
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+
+        <input class="btn" type="submit" value="Отправить!">
+        </form>
+    </div>
 </body>
 
 </html
